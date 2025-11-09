@@ -20,9 +20,9 @@ const ApplyDoctor = () => {
         {
           ...values,
           userId: user._id,
-          timings: [
-            moment(values.timings[0]).format("HH:mm"),
-            moment(values.timings[1]).format("HH:mm"),
+          timing: [
+            moment(values.timing[0]).format("HH:mm"),
+            moment(values.timing[1]).format("HH:mm"),
           ],
         },
         {
@@ -131,7 +131,7 @@ const ApplyDoctor = () => {
           <Col xs={24} md={24} lg={8}>
             <Form.Item
               label="Fees Per Cunsaltation"
-              name="feesPerCunsaltation"
+              name="feesPerConsaltation"
               required
               rules={[{ required: true }]}
             >
@@ -139,7 +139,7 @@ const ApplyDoctor = () => {
             </Form.Item>
           </Col>
           <Col xs={24} md={24} lg={8}>
-            <Form.Item label="Timings" name="timings" required>
+            <Form.Item label="Timings" name="timing" required>
               <TimePicker.RangePicker format="HH:mm" />
             </Form.Item>
           </Col>

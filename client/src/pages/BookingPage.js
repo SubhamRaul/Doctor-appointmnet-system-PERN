@@ -107,10 +107,10 @@ const BookingPage = () => {
             <h4>
               Dr.{doctors.firstName} {doctors.lastName}
             </h4>
-            <h4>Fees : {doctors.feesPerCunsaltation}</h4>
+            <h4>Fees : {doctors.feesPerConsaltation}</h4>
             <h4>
-              Timings : {doctors.timings && doctors.timings[0]} -{" "}
-              {doctors.timings && doctors.timings[1]}{" "}
+              Timings : {doctors.timing && doctors.timing[0]} -{" "}
+              {doctors.timing && doctors.timing[1]}{" "}
             </h4>
             <div className="d-flex flex-column w-50">
               <DatePicker
